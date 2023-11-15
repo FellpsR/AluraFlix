@@ -1,7 +1,11 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto Mono", monospace;
   text-align: center;
-  background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background-aluraflix.png");
+  background-image: url("https://www.sescrio.org.br/wp-content/uploads/2021/03/teatro-e-circo-550x330.jpg");
   background-color: #000000;
   background-size: cover;
   background-position: center top;
@@ -34,10 +38,30 @@ body {
   right: 10px;
 }
 
+.container_allMovies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container_movie{
+  padding: 2%;
+  display: block;
+  max-width: 30%;
+}
+
 body > img {
   margin: 0 10px;
 }
 
 img {
   max-height: 250px;
+}
+
+img:hover{
+  transform: scale(1.2);
+}
+
+p{
+  color: rgb(255, 255, 255)
 }
